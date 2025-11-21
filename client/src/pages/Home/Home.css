@@ -1,0 +1,187 @@
+.about {
+  text-align: center;
+}
+
+.about-sub {
+  margin: 0.5rem 0 2rem;
+  color: #555;
+}
+
+.founder-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.services {
+  text-align: center;
+}
+
+.service-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.founders-section {
+  text-align: center;
+  padding: 5rem 2rem 6rem;
+  background: #ffffff;
+}
+
+.founders-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.founders-sub {
+  max-width: 680px;
+  margin: 0 auto 3.5rem;
+  color: #525252;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* Grid layout */
+.founders-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+/* Founder card */
+.founder-card {
+  background: #ffffff;
+  width: 320px;
+  padding: 2rem 1.7rem;
+  border-radius: 18px;
+  text-align: center;
+
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+/* Founder images */
+.founder-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 18px;
+  object-fit: cover;
+
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Name */
+.founder-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+/* Role label */
+.role {
+  color: #4a63e7;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+}
+
+/* Bio text */
+.bio {
+  color: #4e4e4e;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  opacity: 0.95;
+}
+
+services-section {
+  padding: 5rem 2rem 6rem;
+  text-align: center;
+  background: #f8faff;
+}
+
+.services-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.services-sub {
+  max-width: 650px;
+  margin: 0 auto 3.5rem;
+  color: #555;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* Grid */
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+
+/* Modern card */
+.service-card-modern {
+  width: 300px;
+  background: linear-gradient(135deg, #ffffff, #eef2ff);
+  padding: 2rem 1.7rem;
+  border-radius: 18px;
+
+  border: 1px solid rgba(100, 100, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+
+  transition: 0.25s ease;
+  text-align: left;
+}
+
+/* Hover effect */
+.service-card-modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Icon */
+.service-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Card Title */
+.service-card-modern h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f1f1f;
+}
+
+/* Description */
+.service-card-modern .desc {
+  font-size: 0.98rem;
+  color: #4e4e4e;
+  line-height: 1.55;
+  margin-bottom: 1.4rem;
+}
+
+/* Price */
+.price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #4a63e7;
+  margin-top: auto;
+}

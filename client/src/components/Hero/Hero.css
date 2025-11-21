@@ -1,0 +1,113 @@
+.hero {
+  width: 100%;
+  padding: 7rem 2rem 5rem;
+  background: linear-gradient(115deg, #4a63e7, #6b83ff, #8596ff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+/* Headline */
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  display: block;
+  color: #ecf1ff;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+
+.hero-sub {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-cta {
+  background: white;
+  color: #4a63e7;
+  padding: 0.9rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.20);
+}
+
+.hero-secondary {
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.8);
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.hero-secondary:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: white;
+}
+
+/* Pillars */
+.hero-pillars {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pillar {
+  background: rgba(255,255,255,0.15);
+  padding: 1.4rem 1.6rem;
+  border-radius: 14px;
+  width: 240px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.pillar h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.pillar p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}

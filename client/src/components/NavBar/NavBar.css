@@ -1,0 +1,127 @@
+/* Wrapper that floats the navbar */
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle at center, rgba(88,108,255,0.25), rgba(255,255,255,0) 70%);
+  filter: blur(45px);
+  z-index: -1;
+}
+
+/* The floating navbar container */
+.navbar {
+  width: 92%;
+  max-width: 1150px;
+  padding: 1.1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  transition: padding 0.25s ease, background 0.25s ease,
+              width 0.25s ease, border-radius 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+/* On scroll: shrink + tighten + stronger background */
+.scrolled .navbar {
+  padding: 0.7rem 1.6rem;
+  width: 85%;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #4a63e7;
+}
+
+/* Modern link layout */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+/* NEW Modern Link Style */
+.nav-link {
+  color: #313131;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  position: relative;
+
+  transition: 0.25s ease;
+}
+
+/* Smooth hover: soft background bubble */
+.nav-link:hover {
+  background: rgba(74, 99, 231, 0.08);
+  color: #4a63e7;
+  transform: translateY(-1px);
+}
+
+/* Underline blob animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: #4a63e7;
+  border-radius: 3px;
+  transition: 0.25s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 40%;
+}
+
+/* Contact button */
+.nav-link-btn {
+  background: #4a63e7;
+  color: white;
+  padding: 0.55rem 1.1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.nav-link-btn:hover {
+  background: #364ed5;
+  transform: translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 780px) {
+  .nav-links {
+    display: none;
+  }
+}

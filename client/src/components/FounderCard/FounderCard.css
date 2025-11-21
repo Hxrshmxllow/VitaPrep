@@ -1,0 +1,16 @@
+.founder-card {
+  width: 280px;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.founder-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}

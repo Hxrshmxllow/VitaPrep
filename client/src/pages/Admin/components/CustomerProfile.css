@@ -1,0 +1,85 @@
+.profile-card {
+  background: #fff;
+  padding: 2.6rem;
+  border-radius: 26px;
+
+  border: 1px solid rgba(110, 120, 255, 0.12);
+  box-shadow: 0 16px 45px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Top header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  background: rgba(74, 99, 231, 0.18);
+  color: #4a63e7;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Name */
+.profile-name {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+/* Email */
+.profile-email {
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  color: #61616d;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+/* Chips */
+.profile-chips {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  background: #eef0ff;
+  color: #4a63e7;
+
+  padding: 0.45rem 0.75rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  border: 1px solid rgba(74, 99, 231, 0.25);
+}
+
+/* Divider line */
+.profile-divider {
+  height: 1px;
+  background: rgba(150, 150, 180, 0.2);
+  margin: 0.4rem 0;
+}
+
+/* Notes section (children) */
+.profile-section {
+  margin-top: 0.4rem;
+}

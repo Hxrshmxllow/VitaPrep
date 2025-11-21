@@ -1,0 +1,78 @@
+.admin-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7ff;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+/* MAIN WRAPPER */
+.admin-main {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  border: 1px solid rgba(100, 100, 255, 0.12);
+
+  transition: 0.3s ease;
+}
+
+/* DEFAULT LAYOUT: 3 columns */
+.admin-sections {
+  display: grid;
+  grid-template-columns: 350px 1fr 1fr;
+  gap: 2rem;
+  transition: grid-template-columns 0.3s ease, gap 0.3s ease;
+}
+
+/* --- FOCUS MODE (When a customer is selected) --- */
+.admin-main.focused .admin-sections {
+  grid-template-columns: 240px 300px 1fr; /* Shrinks left columns */
+  gap: 1.4rem;
+}
+
+/* Column wrappers */
+.admin-col {
+  transition: width 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+   min-width: 0; /* lets grid columns shrink */
+  overflow: hidden;
+}
+
+/* Shrink left sections visually too */
+.admin-main.focused .meetings-col {
+  transform: scale(0.92);
+  opacity: 0.95;
+}
+
+.admin-main.focused .customers-col {
+  transform: scale(0.92);
+  opacity: 0.95;
+}
+
+/* Profile panel animates in */
+.profile-col {
+  animation: slideIn 0.35s ease forwards;
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0; 
+    transform: translateX(40px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+/* Responsive */
+@media (max-width: 1250px) {
+  .admin-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-main.focused .admin-sections {
+    grid-template-columns: 1fr;
+  }
+}

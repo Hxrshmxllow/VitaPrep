@@ -1,0 +1,135 @@
+/* Main card container */
+.meetings-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 22px;
+      min-width: 0; /* lets grid columns shrink */
+  overflow: hidden;
+    border: 1px solid rgba(110, 120, 255, 0.15);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.07);
+}
+
+
+/* Header */
+.meetings-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.meetings-header h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Timeline container */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+/* Day header */
+.timeline-day-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Timeline item */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  background: #4a63e7;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* Timeline vertical line */
+.timeline-line {
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  width: 2px;
+  height: 44px;
+  background: #d4d7ff;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Meeting content box */
+.timeline-content {
+  background: #f8f9ff;
+  border: 1px solid #e6e8ff;
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+    min-width: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.25s ease;
+}
+
+/* Hover effect */
+.timeline-content:hover {
+  transform: translateY(-3px);
+  background: #eef0ff;
+  border-color: #c9cdff;
+  box-shadow: 0 10px 28px rgba(74, 99, 231, 0.15);
+}
+
+/* Left side meeting info */
+.meeting-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meeting-icon {
+  background: rgba(74, 99, 231, 0.15);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a63e7;
+}
+
+.meeting-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.meeting-type {
+  font-size: 0.85rem;
+  color: #6c6c80;
+}
+
+/* Time */
+.meeting-time {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4a63e7;
+  white-space: nowrap;
+}

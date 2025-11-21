@@ -1,0 +1,132 @@
+.customers-card {
+  background: #fff;
+  padding: 2.6rem;
+  border-radius: 26px;
+    min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(110, 120, 255, 0.12);
+  box-shadow: 0 16px 45px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem; /* MUCH more vertical spacing */
+}
+
+/* Title */
+.customers-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: -0.5rem;
+  color: #1c1c1f;
+}
+
+/* Search Bar */
+.customers-search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  background: #f2f4ff;
+  padding: 1.1rem 1.4rem;
+  border-radius: 16px;
+
+  border: 1px solid #dee1ff;
+}
+
+.customers-search input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  font-size: 1.05rem;
+}
+
+/* List Container */
+.customers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem; /* more space between rows */
+}
+
+/* Customer Row */
+.customer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+min-width: 0;
+  padding: 1.5rem 1.6rem; /* TALL rows */
+  border-radius: 20px;
+
+  background: #f8f9ff;
+  border: 1px solid #e6e8ff;
+
+  transition: 0.22s ease;
+  cursor: pointer;
+}
+
+.customer-row:hover {
+  background: #eef0ff;
+  border-color: #d5d9ff;
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(74, 99, 231, 0.18);
+}
+
+/* Left side */
+.customer-left {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem; /* more spacing between avatar and text */
+}
+
+/* Bigger avatar */
+.customer-avatar {
+  width: 52px;
+  height: 52px;
+  background: rgba(74, 99, 231, 0.18);
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4a63e7;
+}
+
+/* Info block */
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem; /* more vertical spacing */
+}
+
+.customer-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #202020;
+}
+
+.customer-email {
+  font-size: 0.95rem;
+  color: #6d6d80;
+}
+
+/* Right side tag */
+.customer-right {
+  display: flex;
+  align-items: center;
+}
+
+.customer-tag {
+  background: #4a63e7;
+  color: white;
+
+  padding: 0.45rem 0.9rem;
+  border-radius: 10px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
