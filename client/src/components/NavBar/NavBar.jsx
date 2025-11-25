@@ -13,6 +13,7 @@ export default function NavBar() {
   return (
     <nav className={`nav-wrapper ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar">
+
         <div className="nav-logo">VitaPrep</div>
 
         <div className="nav-links">

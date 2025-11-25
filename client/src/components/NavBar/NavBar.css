@@ -9,6 +9,10 @@
   transition: all 0.3s ease;
 }
 
+.nav-logo-image{
+  height: 40px;
+}
+
 .nav-wrapper::before {
   content: "";
   position: absolute;

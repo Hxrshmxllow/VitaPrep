@@ -21,22 +21,20 @@ export default function Home() {
 
         <div className="founders-grid">
           <div className="founder-card">
-            <img src="/founder1.jpg" alt="Alex" />
-            <h3>Alex Rivera</h3>
+            <img src="/krisshk.jpg" alt="Krissh" />
+            <h3>Krissh Kolhatkar</h3>
             <p className="role">Co-Founder · Transfer Mentor</p>
             <p className="bio">
-              Alex successfully transferred into a top CS program after optimizing his essays, 
-              course strategy, and school list. He now coaches students 1-on-1 to master the same process.
+              Co‑founder. Student at NYU Stern majoring in Finance and Statistics. Systems, dashboards, and essay frameworks that de‑stress timelines.
             </p>
           </div>
 
           <div className="founder-card">
-            <img src="/founder2.jpg" alt="Maya" />
-            <h3>Maya Shah</h3>
+            <img src="/arnavr.jpg" alt="Arnav" />
+            <h3>Arnav Raghuvanshi</h3>
             <p className="role">Co-Founder · Student Coach</p>
             <p className="bio">
-              Maya navigated the transfer process as a first-generation student and brings a holistic 
-              approach to helping students build compelling narratives and standout applications.
+              Co‑founder. Student at NYU Stern majoring in Finance. School list strategy, interview prep, and high‑leverage feedback.
             </p>
           </div>
         </div>
